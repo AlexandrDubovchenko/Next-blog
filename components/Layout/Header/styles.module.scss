@@ -1,0 +1,27 @@
+.header {
+  background-color: blueviolet;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  display: flex;
+  & li:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.link {
+  color: #fff;
+}
+
+.activeLink {
+  color: gold;
+}
+
+.authLinks__container {
+  & a {
+    margin-right: 10px;
+  }
+}

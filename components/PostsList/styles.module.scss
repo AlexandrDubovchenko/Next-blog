@@ -1,0 +1,20 @@
+.post {
+  background: #ffffff;
+  padding: 10px 16px;
+  & div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-width: 80%;
+  }
+}
+
+.root {
+  max-width: 700px;
+  margin: 0 auto;
+  & > li {
+    margin-bottom: 20px;
+  }
+}
