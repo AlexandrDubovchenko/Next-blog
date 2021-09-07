@@ -7,8 +7,8 @@ export const getPostsSsr = async (ctx: GetServerSidePropsContext) => {
     return { props: { posts: data } };
   } catch (error) {
     console.log(error);
+    return {
+      props: { error },
+    };
   }
-  return {
-    props: {},
-  };
 };
