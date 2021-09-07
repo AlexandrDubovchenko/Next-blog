@@ -6,7 +6,7 @@ export const getMyPostsSsr = async (ctx: GetServerSidePropsContext) => {
 
   if (token) {
     try {
-      const { data } = await axios("/my-posts", {
+      const { data } = await axios("https://next-blog-blond-eight.vercel.app/my-posts", {
         headers: { authorization: token },
       });
 
