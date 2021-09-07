@@ -7,7 +7,7 @@ export const getUserSsr =
 
     if (token) {
       try {
-        const { data } = await axios("https://next-blog-blond-eight.vercel.app/auth/me", {
+        const { data } = await axios("https://next-blog-blond-eight.vercel.app/api/auth/me", {
           headers: { authorization: token },
         });
         if (!data && isProtected) {
