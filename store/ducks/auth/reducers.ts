@@ -14,7 +14,7 @@ export const authReducers = createReducer(initialState, (builder) =>
     .addCase(setUser, (state, action) => {
       state.user = action.payload;
     })
-    .addCase(loginThunk.fulfilled, (state, action) => {
+    .addCase(loginThunk.fulfilled, (state, action) => {      
       state.token = action.payload.accessToken;
     })
     .addCase(registerThunk.fulfilled, (state, action) => {

@@ -24,7 +24,7 @@ const Create = () => {
   };
   return (
     <Layout>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form data-testid="create_form" onSubmit={handleSubmit(onSubmit)}>
         <input
           {...register("title")}
           className={styles.title}

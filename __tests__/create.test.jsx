@@ -1,20 +1,20 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Register from "../pages/register";
+import Create from "../pages/create";
 import { Provider } from "react-redux";
 import { useRouter } from "../__mocks__/router";
 import { mockStore } from "../__mocks__/store";
 
-describe("Register", () => {
-  it("renders a register form", () => {
+describe("Login", () => {
+  it("renders a login form", () => {
     render(
       <Provider store={mockStore}>
-        <Register />
+        <Create />
       </Provider>
     );
 
-    const registerForm = screen.getByTestId("register_form");
+    const createForm = screen.getByTestId("create_form");
 
-    expect(registerForm).toBeInTheDocument();
+    expect(createForm).toBeInTheDocument();
   });
 });

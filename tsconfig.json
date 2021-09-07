@@ -14,6 +14,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "__tests__/loginApi.test.js", "__tests__/registerApi.test.js", "__tests__/meApi.test.js"],
   "exclude": ["node_modules"]
 }

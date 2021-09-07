@@ -20,7 +20,7 @@ const Profile = () => {
   return (
     <Layout>
       {JSON.stringify(user)}
-      <button onClick={handleLogout}>Logout</button>
+      <button data-testid="logout_btn" onClick={handleLogout}>Logout</button>
     </Layout>
   );
 };

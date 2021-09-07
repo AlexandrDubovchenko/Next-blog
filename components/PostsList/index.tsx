@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 export const PostsList: FC<{ posts: IPost[] }> = ({ posts }) => {
   return (
-    <ul className={styles.root}>
+    <ul data-testid="posts_list" className={styles.root}>
       {!!posts?.length &&
         posts.map((post, index) => (
           <li className={styles.post} key={index}>

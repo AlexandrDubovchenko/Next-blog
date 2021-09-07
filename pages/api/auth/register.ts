@@ -14,11 +14,10 @@ export default async function handler(
     return;
   }
   const usersCol = collection(firestore, "users");
-  const userRef = await addDoc(usersCol, {
+  await addDoc(usersCol, {
     email,
     password,
   });
-  const user = await getDoc(userRef);
   const accessToken = jwt.sign({ email }, "SECRET");
   res.status(200).json({ accessToken });
 }
