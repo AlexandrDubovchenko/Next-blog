@@ -3,5 +3,6 @@ module.exports = {
   reactStrictMode: true,
   env: {
     URL: process.env.URL
-  }
+  },
+  webpack5: false,
 }
