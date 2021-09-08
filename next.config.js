@@ -4,5 +4,4 @@ module.exports = {
   env: {
     URL: process.env.URL
   },
-  webpack5: false,
 }
