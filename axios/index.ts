@@ -2,7 +2,7 @@ import BaseAxios from "axios";
 import Cookies from "js-cookie";
 
 export const axios = BaseAxios.create({
-  baseURL: "/api",
+  baseURL: "https://next-blog-blond-eight.vercel.app/api",
   headers: { Accept: "*/*" },
 });
 

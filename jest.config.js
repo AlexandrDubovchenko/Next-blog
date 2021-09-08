@@ -1,8 +1,16 @@
 module.exports = {
   collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
+    '**/*.{ts,tsx}',
     '!**/*.d.ts',
+    '!**/types.ts',
+    '!**/store/index.ts',
     '!**/node_modules/**',
+    '!**/pages/_app.tsx',
+    '!**/pages/api/**/*.ts',
+    '!**/utils/**/firebase.ts',
+    '!**/utils/**/createGetServerSideProps.ts',
+    '!**/utils/middlewares/*.ts',
+    '!**/axios/**/*.ts'
   ],
   moduleNameMapper: {
     // Handle CSS imports (with CSS modules)

@@ -1,4 +1,4 @@
-import { collection, addDoc, getDoc } from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore";
 import jwt from "jsonwebtoken";
 import { NextApiRequest, NextApiResponse } from "next";
 import { IUser } from "../../../store/ducks/auth/types";

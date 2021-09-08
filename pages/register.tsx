@@ -14,7 +14,6 @@ const Register: NextPage = () => {
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const userData = await getUserSsr()(ctx);
-  console.log(userData.props?.initialReduxState?.auth);
   
   if (userData.props?.initialReduxState?.auth.user) {
     return {

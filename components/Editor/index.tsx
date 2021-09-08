@@ -8,5 +8,9 @@ type EditorProps = {
 };
 
 export const Editor: FC<EditorProps> = ({ value, onChange }) => {
-  return <ReactQuill theme="snow" value={value} onChange={onChange} />;
+  return (
+    <div data-testid="editor">
+      <ReactQuill theme="snow" value={value} onChange={onChange} />{" "}
+    </div>
+  );
 };

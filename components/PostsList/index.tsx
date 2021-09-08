@@ -7,7 +7,7 @@ export const PostsList: FC<{ posts: IPost[] }> = ({ posts }) => {
     <ul data-testid="posts_list" className={styles.root}>
       {!!posts?.length &&
         posts.map((post, index) => (
-          <li className={styles.post} key={index}>
+          <li data-testid="list-item" className={styles.post} key={index}>
             <h1>{post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: post.text }} />
           </li>

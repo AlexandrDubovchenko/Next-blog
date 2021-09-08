@@ -1,4 +1,3 @@
-import { DocumentReference } from "firebase/firestore";
 import { NextApiResponse } from "next";
 import { NextApiRequestWithUser } from "../../types";
 import { getDataFromRefs } from "../../utils/firebase";
