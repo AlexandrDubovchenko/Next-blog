@@ -6,9 +6,11 @@ export const getPostsSsr = async () => {
     const { data } = await axios("/posts");
     return { props: { posts: data } };
   } catch (error) {
-    console.log(error);
+      //@ts-ignore
+    console.log(error.message);
     return {
-      props: { error },
+      //@ts-ignore
+      props: { error: error.message },
     };
   }
 };
