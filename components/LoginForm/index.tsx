@@ -27,7 +27,7 @@ export const LoginForm: FC = () => {
       onSubmit={handleSubmit(onSubmit)}
       className={styles.form}
     >
-      <input {...register("email")} type="text" placeholder="Email" />
+      <input {...register("email")} type="text" placeholder="Emailllll" />
       <input {...register("password")} type="text" placeholder="Password" />
       <button type="submit">Login</button>
       {loading && <p style={{ marginTop: 30 }}>Loading...</p>}
